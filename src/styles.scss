@@ -1,0 +1,353 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Nexa';
+  src: url(./assets/fonts/Nexa-Regular.otf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url(./assets/fonts/Nexa-Bold.otf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  font-family: 'Nexa' !important;
+  font-weight: normal !important;
+}
+
+body {
+  margin: 0;
+  font-family: Nexa, 'Helvetica Neue', sans-serif;
+}
+
+// XL
+
+@media (min-width: 1025px) {
+  .home, .services {
+    padding: 0 15%;
+  }
+}
+
+// LG
+
+@media (max-width: 1024px) {
+  .home, .products {
+    padding: 0 10%;
+  }
+}
+
+// MD
+
+@media (max-width: 768px) {
+  .home, .services {
+    padding: 0 8%;
+  }
+}
+
+// SM
+
+@media (max-width: 640px) {
+  .home, .services {
+    padding: 0 5%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cdk-overlay-connected-position-bounding-box {
+    left: 0px !important;
+    align-items: initial !important;
+    display: flex !important;
+    top: 40px !important;
+    width: 100% !important;
+  }
+
+  .transparent {
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .mat-menu-panel {
+    width: 100vw !important;
+    min-width: 0px !important;
+    max-width: 100% !important;
+    border-radius: 0px !important;
+    overflow: initial !important;
+    min-height: 30vh !important;
+    background-color: #cccccc !important;
+  }
+
+  .mat-menu-one {
+    width: 100% !important;
+    padding: 2% 0%;
+
+    .mat-menu-content {
+      display: flex !important;
+      padding: 0px !important;
+    }
+
+    .container-triangle {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: transparent;
+
+      .triangle {
+        width: 0;
+        height: 0;
+        position: relative;
+        border-left: 20px solid transparent;
+        border-bottom: 30px solid #cccccc;
+        border-right: 20px solid transparent;
+        left: 14%;
+        right: 0;
+        top: -3.6em;
+        bottom: 0;
+      }
+    }
+
+    .frame {
+      width: 50% !important;
+      height: 30vh !important;
+      justify-content: space-around !important;
+      display: flex;
+      align-items: center;
+
+      p {
+        width: 40%;
+        color: #606060;
+
+        span {
+          a {
+            color: #ffaa00;
+            text-decoration: none;
+          }
+        }
+      }
+
+      img {
+        width: 40%;
+        padding-left: 5%;
+      }
+    }
+    .meerkat-logo {
+      border-left: 1px solid #80808075;
+    }
+  }
+  .mat-menu-two {
+    padding: 3%;
+    .mat-menu-content {
+      display: flex !important;
+      padding: 0px !important;
+    }
+
+    .container-triangle {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: transparent;
+
+      .triangle {
+        width: 0;
+        height: 0;
+        position: relative;
+        border-left: 20px solid transparent;
+        border-bottom: 30px solid #cccccc;
+        border-right: 20px solid transparent;
+        left: 23%;
+        right: 0;
+        top: -4.3em;
+        bottom: 0;
+      }
+    }
+
+    .super-frame {
+      display: flex;
+      width: 100%;
+
+      .super-container {
+        width: 100%;
+        .container {
+          display: flex;
+          align-items: center;
+          height: 7em;
+          padding: 0% 14%;
+          border-bottom: 1px solid #999999;
+
+          .frame {
+            width: 50px;
+            height: 50px;
+            background-color: #999999;
+            border-radius: 50%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+
+            img {
+              width: 70%;
+            }
+          }
+
+          .text {
+            line-height: 1.2em;
+            color: #606060;
+            padding-left: 4%;
+
+            h1 {
+              margin: 0px !important;
+              font-size: 1.2em;
+              font-weight: bold;
+            }
+
+            p {
+              font-size: 0.9em;
+            }
+          }
+        }
+
+        .c-three,
+        .c-six,
+        .c-nine {
+          border-bottom: none;
+        }
+
+        .c-eight,
+        .c-nine {
+          .frame {
+            background-color: transparent;
+            img {
+              display: none;
+            }
+          }
+          .text {
+            display: none;
+          }
+        }
+      }
+
+      .s-c-one,
+      .s-c-two {
+        border-right: 1px solid #999999;
+      }
+    }
+  }
+  .mat-menu-three {
+    .mat-menu-content {
+      display: flex !important;
+      padding: 0px !important;
+    }
+
+    .container-triangle {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: transparent;
+
+      .triangle {
+        width: 0;
+        height: 0;
+        position: relative;
+        border-left: 20px solid transparent;
+        border-bottom: 30px solid #cccccc;
+        border-right: 20px solid transparent;
+        left: 39%;
+        right: 0;
+        top: -2.1em;
+        bottom: 0;
+      }
+    }
+
+    .super-frame {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      height: 12em;
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        height: 10em;
+
+        .text {
+          line-height: 1.2em;
+          color: #606060;
+          padding-left: 4%;
+
+          h1 {
+            margin: 0px !important;
+            font-size: 1.5em;
+            font-weight: bold;
+          }
+        }
+
+        .frame {
+          width: 50px;
+          height: 50px;
+          background-color: #999999;
+          border-radius: 50%;
+          justify-content: center;
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 70%;
+          }
+        }
+      }
+
+      .container-whatsapp {
+        border-left: 1px solid #999999;
+        border-right: 1px solid #999999;
+        padding: 0% 3%;
+      }
+    }
+  }
+}
+
+// ******************************
+// *  resolucion de 1280 o mas  *
+// ******************************
+
+@media (min-width: 1280px) {
+  .mat-menu-one {
+    .container-triangle {
+      .triangle {
+        left: 12%;
+        top: -3.9em;
+      }
+    }
+  }
+
+  .mat-menu-two {
+    .container-triangle {
+      .triangle {
+        left: 20%;
+        top: -4.8em;
+      }
+    }
+  }
+
+  .mat-menu-three {
+    .container-triangle {
+      .triangle {
+        left: 35%;
+        top: -2.1em;
+      }
+    }
+  }
+}
+
+.mat-h4, .mat-subheading-1, .mat-typography h4 {
+  margin-bottom: 2px;
+}

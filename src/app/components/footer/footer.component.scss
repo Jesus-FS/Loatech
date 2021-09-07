@@ -1,0 +1,148 @@
+//mobile
+$font-color-gray: #999999;
+footer {
+  background: #3b3b3b;
+  color: $font-color-gray;
+
+  .container {
+    .row {
+      padding: 10% 5% 5% 5%;
+      display: flex;
+      flex-direction: column;
+
+      .left-column {
+        display: flex;
+        justify-content: space-between;
+        gap: 10%;
+        width: 100%;
+
+        .loatech-logo {
+          width: 30%;
+        }
+
+        .navigation {
+          li {
+            list-style: none;
+
+            a {
+              margin: 0%;
+              text-decoration: none;
+              color: $font-color-gray;
+              font-size: 10px;
+            }
+          }
+        }
+
+        .information {
+          p {
+            font-size: 10px;
+          }
+        }
+      }
+
+      .right-column {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+        margin-top: 15%;
+        margin-bottom: 3%;
+        align-items: flex-end;
+
+        .logo-microsoft {
+          width: 30%;
+          order: 2;
+          align-items: flex-end;
+          text-align: right;
+          padding: 0px;
+          margin: 0px;
+
+          img {
+            width: 70%;
+          }
+        }
+        .copyright {
+          order: 1;
+          width: 70%;
+          text-align: left;
+          align-self: flex-end;
+          h3 {
+            font-size: 8px;
+            line-height: 1.5em;
+            padding: 0px;
+            margin: 2px 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//desktop
+@media (min-width: 1024px) {
+  footer {
+    .container {
+      .row {
+        padding-top: 3%;
+        padding-bottom: 1%;
+        display: flex;
+        flex-direction: row;
+
+        .left-column {
+          display: flex;
+          justify-content: flex-start;
+          gap: 20%;
+          width: 50%;
+
+          .loatech-logo {
+            width: 25%;
+          }
+
+          .navigation {
+            li {
+              a {
+                font-size: 12px;
+              }
+            }
+          }
+
+          .information {
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .right-column {
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: column;
+          width: 50%;
+          margin-top: 0%;
+          margin-bottom: 0%;
+          .logo-microsoft {
+            order: 1;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+              width: 17%;
+            }
+          }
+          .copyright {
+            order: 2;
+            margin-top: 100px;
+            text-align: right;
+
+            h3 {
+              font-family: 'Nexa';
+              margin: 0px !important;
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

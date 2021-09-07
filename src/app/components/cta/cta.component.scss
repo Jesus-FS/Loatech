@@ -1,0 +1,106 @@
+.cta {
+  background-image: url(/assets/img/backgrounds/loatech-background-04.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  .text {
+    padding: 10% 5%;
+    color: #ffffff;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 0;
+      line-height: 1.2em;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+
+    a {
+      text-decoration: none;
+      background-color: #606060;
+      padding: 2%;
+      color: #ffffff;
+      border-radius: 3px;
+
+      &:hover {
+        background-color: #999999;
+        color: #ffffff;
+        box-shadow: 2px 2px 17px -6px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+
+  .container-triangle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    position: relative;
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-bottom: 40px solid #f5f5f5;
+      border-right: 25px solid transparent;
+    }
+  }
+}
+
+@media (min-width: 540px) and (max-width: 1023px) {
+  .cta {
+    font-size: 20px !important;
+
+    .text {
+      h2 {
+        font-size: 25px !important;
+      }
+
+      p {
+        font-size: 15px !important;
+        margin-bottom: 30px !important;
+      }
+    }
+  }
+}
+
+// *************************************
+// *        Responsive desktop         *
+// *************************************
+
+@media (min-width: 1024px) {
+  .cta {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+
+    .text {
+      padding: 5% 5%;
+      h2 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1.5em;
+      }
+
+      a {
+        padding: 1.2%;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .cta {
+    margin-top: 7% !important;
+  }
+}

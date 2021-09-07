@@ -1,0 +1,19 @@
+@media (max-width: 640px) {
+  .clients {
+
+    .container {
+      top: 0em;
+
+      .text {
+
+        h2 {
+          font-size: 1.2em !important;
+        }
+      
+        p {
+          font-size: 0.9em !important;
+        }
+      }
+    }
+  }
+}

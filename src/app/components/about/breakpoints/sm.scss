@@ -1,0 +1,52 @@
+@media (max-width: 640px) {
+  .about {
+    flex-direction: column;
+
+    .text {
+      width: 100%;
+      padding: 20% 5%;
+
+      h2 {
+        font-size: 1.7em;
+        //font-size: calc(1.7em + 1vw);
+        margin-bottom: 5%;
+      }
+
+      p {
+        //font-size: 0.9em;
+        font-size: 1.16em;
+        //font-size: calc(0.9em + 1vw);
+        line-height: 1.6em;
+      }
+
+      .links {
+        margin-top: 7%;
+
+        .mail {
+          //width: 40%;
+          //width: 30%;
+          width: 45%;
+        }
+
+        a {
+          font-size: 0.9em;
+          //font-size: calc(0.5em + 1vw);
+        }
+
+        .appointment {
+          //width: 160px;
+          //width: 33%;
+          width: 45%;
+        }
+      }
+    }
+    .background {
+      width: 100% !important;
+      height: 20em;
+      background-image: url(/assets/img/backgrounds/loatech-background-02.svg);
+      background-repeat: no-repeat;
+      display: flex;
+      background-size: cover;
+    }
+  }
+}

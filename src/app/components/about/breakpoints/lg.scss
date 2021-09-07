@@ -1,0 +1,33 @@
+@media (max-width: 1024px) {
+  .about {
+    .text {
+      width: 50%;
+      padding: 10% 5% 10% 10%;
+
+      h2 {
+        font-size: 1.9em;
+      }
+
+      p {
+        font-size: 0.8em;
+        line-height: 1.3em;
+      }
+
+      .links {
+        margin-top: 10%;
+
+        .mail {
+          width: 30%;
+        }
+
+        a {
+          font-size: 0.9em;
+        }
+
+        .appointment {
+          width: 43%;
+        }
+      }
+    }
+  }
+}

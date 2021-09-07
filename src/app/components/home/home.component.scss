@@ -1,0 +1,118 @@
+@import './breakpoints/xl.scss';
+@import './breakpoints/lg.scss';
+@import './breakpoints/md.scss';
+@import './breakpoints/sm.scss';
+
+.home {
+  background: #3b3b3b;
+  background-image: url(/assets/img/backgrounds/loatech-background-01.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+
+  .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15vh 0 5vh 0;
+
+    .presentation-container {
+      height: 50vh;
+      max-width: 90%;
+      display: flex;
+      flex-direction: column;
+
+      .title-container {
+        .title {
+          margin-bottom: 1%;
+        }
+      }
+      .slide-container {
+        display: flex;
+        align-items: center;
+        margin-top: 1.5%;
+
+        label {
+          display: flex;
+          align-items: center;
+
+          h4 {
+            margin: 0% 10%;
+          }
+        }
+      }
+    }
+
+    .microsoft-container {
+      height: 30vh;
+      max-width: 90%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-start;
+    }
+
+    .arrow-container {
+      width: 100%;
+      //margin-top: -4vh;
+      .arrow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    .social-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      width: 5%;
+      position: absolute;
+      top: 0;
+      padding: 15vh 0 5vh 0;
+      align-items: flex-end;
+      z-index: 0;
+
+      .social {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        div {
+          background-color: #808080;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.triangle-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #cccccc;
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-top: 40px solid #3b3b3b;
+    border-right: 25px solid transparent;
+  }
+}
+
+//mat toggle modify
+:host ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+  background-color: #ffaa00;
+}
+
+:host ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+  background-color: #ffffff;
+}

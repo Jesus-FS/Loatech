@@ -1,0 +1,359 @@
+<section class="navbar">
+  <mat-toolbar>
+    <a href="#" class="logo"><img src="/assets/img/icons/loatech-icon-negativo-fc.svg" alt="Loatech" /></a>
+    <span class="example-spacer"></span>
+
+    <button
+      *ngIf="isOpen; else Close"
+      mat-icon-button
+      class="menu-button"
+      (click)="openMenu()"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon><img src="/assets/img/icons/loatech-icon-burger-menu.svg" alt="Burger" /></mat-icon>
+    </button>
+    <ng-template #Close>
+      <button mat-icon-button class="menu-button" (click)="openMenu()" aria-label="Example icon-button with menu icon">
+        <mat-icon class="close"><img src="/assets/img/icons/loatech-icon-close-menu.svg" alt="Close" /></mat-icon>
+      </button>
+      <div id="menu-content">
+        <div class="link">
+          <a class="Phome" href="#">Inicio</a>
+          <a class="about" href="#">About</a>
+        </div>
+
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Productos </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="product-menu">
+              <div class="arkana-container">
+                <img class="arkana" src="/assets/img/icons/loatech-icon-arkana-menu_02.svg" alt="Arkana" />
+              </div>
+              <div class="meerkkat-container">
+                <img class="meerkat" src="/assets/img/icons/loatech-icon-meerkat-menu_02.svg" alt="Meerkat" />
+              </div>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Servicios </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="container">
+              <div class="section one">
+                <mat-card class="example-card">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                      <img src="/assets/img/icons/loatech-icon-developement.svg" alt="Developement" />
+                    </div>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <mat-card-title
+                      >Software <br class="space" />
+                      development</mat-card-title
+                    >
+                  </mat-card-content>
+                </mat-card>
+                <mat-card class="example-card">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                      <img style="width: 18px" src="/assets/img/icons/loatech-icon-cell.svg" alt="Cell" />
+                    </div>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <mat-card-title
+                      >Mobile <br class="space" />
+                      development</mat-card-title
+                    >
+                  </mat-card-content>
+                </mat-card>
+                <mat-card class="example-card">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                      <img src="/assets/img/icons/loatech-icon-cloud.svg" alt="Cloud" />
+                    </div>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <mat-card-title>Cloud Migrations</mat-card-title>
+                  </mat-card-content>
+                </mat-card>
+                <mat-card class="example-card">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                      <img src="/assets/img/icons/loatech-icon-glass.svg" alt="Glass" />
+                    </div>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <mat-card-title>Product conceptualization</mat-card-title>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="section two">
+                <mat-card class="example-card">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                      <img src="/assets/img/icons/loatech-icon-consultancy.svg" alt="Consultancy" />
+                    </div>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <mat-card-title>Consultancy</mat-card-title>
+                  </mat-card-content>
+                </mat-card>
+                <mat-card class="example-card">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                      <img src="/assets/img/icons/loatech-icon-flag.svg" alt="flag" />
+                    </div>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <mat-card-title
+                      >Project <br class="space" />
+                      Management</mat-card-title
+                    >
+                  </mat-card-content>
+                </mat-card>
+                <mat-card class="example-card">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                      <img src="/assets/img/icons/loatech-icon-branding.svg" alt="branding" />
+                    </div>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <mat-card-title>Branding</mat-card-title>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Contacto </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="container">
+              <div class="section one">
+                <mat-card class="example-card contact-1">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                      <img src="/assets/img/icons/loatech-icon-mail.svg" alt="Mail" />
+                    </div>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <mat-card-title>Envíenos un mail</mat-card-title>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </mat-card-content>
+                </mat-card>
+                <mat-card class="example-card contact-2">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                      <img src="/assets/img/icons/loatech-icon-camera-menu.svg" alt="Camera" />
+                    </div>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <mat-card-title>Agende una cita</mat-card-title>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="section two">
+                <mat-card class="example-card contact-3">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                      <img src="/assets/img/icons/loatech-icon-whatsapp.svg" alt="Whatsapp" />
+                    </div>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <mat-card-title>Escríbanos en WhatsApp</mat-card-title>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <div class="elephant">
+          <img src="/assets/img/icons/loatech-icon-white-elephant.svg" alt="Elephant" />
+        </div>
+      </div>
+    </ng-template>
+  </mat-toolbar>
+
+  <!-- links para el navbar de la version desktop -->
+
+  <div class="links">
+    <a class="Phome" href="#">Inicio</a>
+    <a class="about" href="#">About</a>
+
+    <a class="transparent" mat-button [matMenuTriggerFor]="aboveMenu">Productos</a>
+    <mat-menu #aboveMenu="matMenu" yPosition="above" class="mat-menu-one">
+      <div class="container-triangle">
+        <div class="triangle"></div>
+      </div>
+      <div class="frame arkana-logo">
+        <img src="/assets/img/icons/loatech-icon-arkana-menu.svg" alt="Arkana" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
+          <br />
+          <span><a href="">ver mas</a></span>
+        </p>
+      </div>
+      <div class="frame meerkat-logo">
+        <img src="/assets/img/icons/loatech-icon-meerkat-menu.svg" alt="meerkat" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
+          <br />
+          <span><a href="">ver mas</a></span>
+        </p>
+      </div>
+    </mat-menu>
+
+    <a class="transparent" mat-button [matMenuTriggerFor]="aboveMenutwo">Servicios</a>
+    <mat-menu #aboveMenutwo="matMenu" yPosition="above" class="mat-menu-two">
+      <div class="container-triangle">
+        <div class="triangle"></div>
+      </div>
+      <div class="super-frame">
+        <div class="super-container s-c-one">
+          <div class="container c-one">
+            <div class="frame one">
+              <img src="/assets/img/icons/loatech-icon-developement.svg" alt="Developement" />
+            </div>
+            <div class="text">
+              <h1>Software development</h1>
+              <p>Software development</p>
+            </div>
+          </div>
+
+          <div class="container c-two">
+            <div class="frame one">
+              <img src="/assets/img/icons/loatech-icon-developement.svg" alt="Developement" />
+            </div>
+            <div class="text">
+              <h1>Mobile development</h1>
+              <p>Mobile development</p>
+            </div>
+          </div>
+
+          <div class="container c-three">
+            <div class="frame one">
+              <img src="/assets/img/icons/loatech-icon-developement.svg" alt="Developement" />
+            </div>
+            <div class="text">
+              <h1>Cloud Migrations</h1>
+              <p>Cloud Migrations</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="super-container s-c-two">
+          <div class="container c-four">
+            <div class="frame one">
+              <img src="/assets/img/icons/loatech-icon-developement.svg" alt="Developement" />
+            </div>
+            <div class="text">
+              <h1>Product conceptualization</h1>
+              <p>Product conceptualization</p>
+            </div>
+          </div>
+
+          <div class="container c-five">
+            <div class="frame one">
+              <img src="/assets/img/icons/loatech-icon-developement.svg" alt="Developement" />
+            </div>
+            <div class="text">
+              <h1>Consultancy</h1>
+              <p>Consultancy</p>
+            </div>
+          </div>
+
+          <div class="container c-six">
+            <div class="frame one">
+              <img src="/assets/img/icons/loatech-icon-developement.svg" alt="Developement" />
+            </div>
+            <div class="text">
+              <h1>Branding</h1>
+              <p>Branding</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="super-container s-c-three">
+          <div class="container c-seven">
+            <div class="frame one">
+              <img src="/assets/img/icons/loatech-icon-developement.svg" alt="Developement" />
+            </div>
+            <div class="text">
+              <h1>Project Management</h1>
+              <p>Project Management</p>
+            </div>
+          </div>
+
+          <div class="container c-eight">
+            <div class="frame one">
+              <img src="/assets/img/icons/loatech-icon-developement.svg" alt="Developement" />
+            </div>
+            <div class="text">
+              <h1>Software development</h1>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+
+          <div class="container c-nine">
+            <div class="frame one">
+              <img src="/assets/img/icons/loatech-icon-developement.svg" alt="Developement" />
+            </div>
+            <div class="text">
+              <h1>Software development</h1>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-menu>
+
+    <a class="transparent" mat-button [matMenuTriggerFor]="aboveMenuthree" class="button-contact">Contacto</a>
+    <mat-menu #aboveMenuthree="matMenu" yPosition="above" class="mat-menu-three">
+      <div class="container-triangle">
+        <div class="triangle"></div>
+      </div>
+      <div class="super-frame">
+        <div class="container">
+          <div class="frame one">
+            <img src="/assets/img/icons/loatech-icon-mail.svg" alt="Mail" />
+          </div>
+          <div class="text">
+            <h1>Envíenos un mail</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div class="container container-whatsapp">
+          <div class="frame one">
+            <img src="/assets/img/icons/loatech-icon-whatsapp.svg" alt="Whatsapp" />
+          </div>
+          <div class="text">
+            <h1>Escríbanos en WhatsApp</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="frame one">
+            <img src="/assets/img/icons/loatech-icon-camera-menu.svg" alt="Camera" />
+          </div>
+          <div class="text">
+            <h1>Agende una cita</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+    </mat-menu>
+  </div>
+</section>

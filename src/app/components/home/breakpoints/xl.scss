@@ -1,0 +1,100 @@
+@media (min-width: 1025px) {
+  .container {
+    .presentation-container {
+      justify-content: flex-end;
+      .title-container {
+        .title {
+          font-weight: 510 !important;
+          font-size: 2.4em;
+          line-height: 1.1em;
+        }
+      }
+
+      .text-container {
+        width: 60%;
+        .text {
+          font-size: 1.2em;
+        }
+      }
+
+      .slide-container {
+        h4 {
+          font-size: 0.9em;
+        }
+
+        label {
+          h4 {
+            font-size: 0.8em;
+            font-weight: 200 !important;
+          }
+        }
+      }
+    }
+
+    .microsoft-container {
+      .microsoft {
+        img {
+          width: 150px;
+        }
+      }
+    }
+
+    .arrow-container {
+      margin-top: -4vh;
+      .arrow {
+        img {
+          width: 17px;
+        }
+      }
+    }
+
+    .social-container {
+      right: 15%;
+      justify-content: center;
+      .social {
+        div {
+          width: 30px;
+          height: 30px;
+          margin-bottom: 15%;
+
+          a {
+            img {
+              padding-top: 5px;
+              width: 15px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /** 
+  * set toggle size of angular material
+  *
+  * This configuration applies to the XL screen size (min 1280px)
+  */
+
+  /* size white point */
+  :host ::ng-deep .mat-slide-toggle-thumb {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* position white point */
+  :host ::ng-deep .mat-slide-toggle-thumb-container {
+    top: 0.5px;
+    left: 1.5px;
+  }
+
+  /* offset length white point */
+  :host ::ng-deep .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb-container {
+    transform: translate3d(10px, 0, 0) !important;
+  }
+
+  /* size orange bar */
+  :host ::ng-deep .mat-slide-toggle-bar {
+    height: 12px;
+    border-radius: 18px;
+    width: 24px;
+  }
+}

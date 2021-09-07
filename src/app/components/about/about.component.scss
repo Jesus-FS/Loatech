@@ -1,0 +1,113 @@
+@import './breakpoints/xl.scss';
+@import './breakpoints/lg.scss';
+@import './breakpoints/md.scss';
+@import './breakpoints/sm.scss';
+
+.about {
+  background-color: #cccccc;
+  color: #606060;
+  width: 100%;
+  display: flex;
+
+  .text {
+    h2 {
+      font-weight: bold !important;
+    }
+
+    p {
+      text-align: left;
+      font-weight: 500;
+    }
+
+    .links {
+      display: flex;
+      width: 100%;
+
+      .mail {
+        background-color: #999999;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.2em;
+        padding: 2%;
+        margin-right: 4%;
+      }
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      .appointment {
+        height: 2.2em !important;
+        background-color: #ffaa00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+        border-radius: 3px;
+
+        .camera {
+          margin-right: 6%;
+          width: 12%;
+        }
+      }
+    }
+  }
+  .background {
+    width: 50%;
+    background-image: url(/assets/img/backgrounds/loatech-background-02.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+  }
+}
+.container-triangle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  position: absolute;
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-top: 33px solid #3b3b3b;
+    border-right: 20px solid transparent;
+  }
+}
+.container-triangle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  position: absolute;
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-top: 33px solid #3b3b3b;
+    border-right: 20px solid transparent;
+  }
+}
+.container-triangle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  position: absolute;
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-top: 33px solid #3b3b3b;
+    border-right: 20px solid transparent;
+  }
+}

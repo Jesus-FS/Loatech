@@ -1,0 +1,41 @@
+@import './breakpoints/sm.scss';
+@import './breakpoints/md.scss';
+@import './breakpoints/lg.scss';
+@import './breakpoints/xl.scss';
+
+.clients {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+
+  .container {
+    background-color: #fff;
+    text-align: center;
+    color: #606060;
+    padding: 5% 10%;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 17px -6px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-top: -16%;
+
+    .text {
+      padding: 1% 2%;
+      color: #606060;
+
+      h2 {
+        font-weight: bold !important;
+        font-family: 'Nexa' !important;
+        font-size: 2em;
+        line-height: 1.2em !important;
+      }
+
+      p {
+        line-height: 1.2em !important;
+        width: 100%;
+      }
+    }
+  }
+}
+

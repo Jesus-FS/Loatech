@@ -1,0 +1,28 @@
+@media (min-width: 1024px) {
+  .clients {
+
+    .container {
+      padding: 4% !important;
+      width: 80% !important;
+      top: 7em !important;
+      .text {
+        margin-bottom: 50px !important;
+
+        h2 {
+          font-size: 2em !important;
+        }
+
+        p {
+          font-size: 1.2em !important;
+          text-align: center !important;
+          margin: 0 auto !important;
+        }
+      }
+
+      #carousel {
+        width: 75% !important;
+        margin: 0 auto !important;
+      }
+    }
+  }
+}

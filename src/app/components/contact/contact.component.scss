@@ -1,0 +1,118 @@
+.contact {
+  padding: 15% 5%;
+  text-align: center;
+  color: #606060;
+  background-color: #f5f5f5;
+
+  h2 {
+    font-weight: bold;
+  }
+
+  .slider {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    mat-slide-toggle {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    mat-label {
+      width: 400px;
+    }
+
+    .meetingContainer {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      mat-form-field {
+        width: 32.5%;
+      }
+    }
+  }
+
+  .button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    .send {
+      background-color: #ffaa00;
+      border: none;
+      padding: 2%;
+      color: #ffffff;
+      border-radius: 3px;
+      display: flex;
+
+      img {
+        width: 15px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .mat-input-element {
+    font-size: 12px !important;
+  }
+}
+
+:host ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+  background-color: #ffaa00;
+}
+
+:host ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+  background-color: #ffffff;
+}
+
+// *************************************
+// *        Responsive desktop         *
+// *************************************
+
+@media (min-width: 1024px) {
+  .contact {
+    padding: 5%;
+
+    h2 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+
+    .slider {
+      font-size: 1.2em;
+      display: flex;
+      align-items: center !important;
+    }
+
+    form {
+      padding: 0% 15%;
+    }
+
+    .button {
+      padding: 0% 15%;
+
+      .send {
+        padding: 1% !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .contact {
+    padding: 5% 10% !important;
+
+    .slider {
+      display: flex;
+      align-items: center !important;
+    }
+  }
+}
